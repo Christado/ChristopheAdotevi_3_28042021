@@ -1,0 +1,200 @@
+@mixin cont($colour: $colour-background){
+    background: $colour;
+    width: $width-cont-mobile;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+@mixin btn--discover{
+    width: 50%;
+    max-width: 300px;
+    z-index: 1;
+    position: relative;
+    background: $colour-btn;
+    border-radius: 30px 30px 30px 30px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 25px;
+    box-shadow: 6px 6px 10px darken($colour-background, 25%);
+    transition: opacity 250ms ease-in-out;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.9;
+        .header__discover__btn--darken{
+            opacity: 1;
+        }
+    }
+    &--darken{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: 6px 6px 10px darken($colour-background, 35%);
+        border-radius: 30px 30px 30px 30px;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}
+
+@mixin btn--fct{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    max-width: 350px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: $colour-background;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 10px darken($colour-background, 25%);
+    transition: opacity 250ms ease-in-out;
+    cursor: pointer;
+    @media (min-width: 1000px){
+        flex-direction: row;
+        margin: 10px;
+    } 
+    &--darken{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: 6px 6px 10px darken($colour-background, 35%);
+        border-radius: 25px 25px 25px 25px;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+    &:hover{
+        opacity: 0.8;
+        .cont-fct__btn--darken{
+            opacity: 1;
+        }
+    }
+    & span{
+        display: flex;
+        border-radius: 30px;
+        background-color: $colour-primary;
+        width: 25px;
+        height: 25px;
+        margin-left: -10px;
+        margin-right: 20px;
+        color: $colour-text-secondary;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+    }
+    & i{
+        margin-right: 20px;
+        width: 25px;
+        font-size: 1.2rem;
+        color: darken($colour-background, 55%);
+        transition: color 1s;
+    }
+}
+
+
+
+@mixin rst-link{
+    width: $width-cont-mobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1000px){
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }   
+    & a{
+        width: 85%;
+        text-decoration: none;
+        color: $colour-text-primary;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+        @media (min-width: 1000px) and (max-width: 1474px){
+            width: 45%;
+            min-width: 320px;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        @media (min-width: 1475px){
+            width: 20%;
+            min-width: 320px;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .cont-rst__link--darken{
+            position: absolute;
+            height: 250px;
+            top: 1rem;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            box-shadow: 6px 6px 10px darken($colour-background, 35%);
+            border-radius: 25px 25px 25px 25px;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+        }   
+        &:hover{
+            opacity: 0.9;
+            .cont-rst__link--darken{
+                opacity: 1;
+            }
+        } 
+    }
+    & figure{
+        margin-left: 0;
+        margin-right: 0;
+        align-self: center;
+        width: 100%;
+        height: 250px;
+        background-color: $colour-white;
+        border-radius: 25px;
+        box-shadow: 6px 6px 10px darken($colour-background, 25%);
+        position: relative;
+        z-index: 1;
+        transition: opacity 250ms ease-in-out;
+        & .nouveau{
+        background-color:$colour-tertiary;
+        color: darken($colour-tertiary, 50%);
+        padding: .5rem;
+        border-radius: 5px;
+        position: absolute;
+        right: 1rem;
+        }
+        
+    }
+    & img{
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 25px 25px 0px 0px;
+    }
+    & figcaption{
+        width: 100%;
+        max-height: 60px;
+        line-height: 0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        cursor: pointer;
+        & > div{
+            margin-left: 15px;
+        }   
+        & i{
+            font-size: 175%;
+            justify-self: flex-end;
+            margin-right: 15px;
+        }
+    }
+}

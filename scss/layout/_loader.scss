@@ -1,0 +1,51 @@
+.loader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    position: absolute;
+    @media (max-width: 1000px){
+        margin-top: 200px;
+    } 
+    & img{
+        position: absolute;
+        opacity: 0;
+        animation: loader-logo 3s reverse ease-in-out backwards;
+        @media (max-width: 480px){
+            width: 100px;
+        } 
+        @media (min-width: 481px) and (max-width: 1000px){
+            width: 125px;
+        }
+    }
+}
+
+.fa-spinner{
+    font-size: 30rem;
+    position: absolute;
+    @media (max-width: 480px){
+        font-size: 15rem;
+    } 
+    @media (min-width: 481px) and (max-width: 1000px){
+        font-size: 22rem;
+    }
+}
+
+.spinner--1{
+    color: $colour-primary;
+    opacity: 0;
+    animation: loader 1s ease-in-out;
+}
+
+.spinner--2{
+    color: $colour-secondary;
+    opacity: 0;
+    animation: loader 1s 1s ease-in-out reverse;
+}
+
+.spinner--3{
+    color: $colour-tertiary;
+    opacity: 0;
+    animation: loader 1s 2s ease-in-out;
+}

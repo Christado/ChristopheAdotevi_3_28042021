@@ -1,0 +1,16 @@
+.header__discover__btn{
+    @include btn--discover;
+}
+
+.cont-fct__btn{
+    @include btn--fct;
+}
+
+.cont-fct__btn--shop{
+    @include btn--fct;
+    background: lighten($colour-primary, 34%);
+    & i{
+        color: $colour-primary;    
+    }
+}
+

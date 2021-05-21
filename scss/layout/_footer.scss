@@ -1,0 +1,29 @@
+.footer{
+    background-color: darken($colour-background, 75.5%);
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    & img{
+        width: 125px;
+        padding-left: 40px;
+        filter: invert(100%);
+    }
+    & li{
+        list-style-type: none;
+        padding-bottom: 10px;
+        & a{
+            text-decoration: none;
+            color: $colour-text-secondary;
+            & i{
+                padding-right: 20px;
+                width: 8px;
+            }
+            &:hover{
+            color: $colour-secondary;
+        }
+        }
+    }
+}

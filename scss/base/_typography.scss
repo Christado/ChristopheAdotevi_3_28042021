@@ -1,0 +1,38 @@
+body{
+    font-family: 'Bahnschrift', sans-serif;
+    color: $colour-text-primary;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+h2{
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header h3{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: $colour-text-secondary;
+}
+
+.menu__header__title{
+    font-family: Cambria , sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-style: italic;
+}
+

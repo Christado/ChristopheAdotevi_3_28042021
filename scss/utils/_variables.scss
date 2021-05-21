@@ -1,0 +1,14 @@
+$colour-primary: #9356DC ;
+$colour-secondary: #FF79DA ;
+$colour-tertiary: #99E2D0;
+$colour-white: #fff;
+$colour-text-primary: #000000;
+$colour-text-secondary: #fff;
+$colour-invalid: #DB464B;
+$colour-background: #f6f6f6;
+$colour-transparent:  #f6f6f600;
+$colour-btn: linear-gradient(to top left, $colour-primary, $colour-secondary);
+$colour-cont--degr: linear-gradient(90deg, ($colour-transparent) 0%, ($colour-background) 5%, ($colour-background) 50%, ($colour-background) 95%, ($colour-transparent) 100%);
+$colour-cont--degr--sombre: linear-gradient(90deg, ($colour-transparent) 0%, (darken($colour-background, 5%)) 5%, (darken($colour-background, 5%)) 50%, (darken($colour-background, 5%)) 95%, ($colour-transparent) 100%);
+$width-cont-mobile: 100%;
+$padding-cont: 15px;
