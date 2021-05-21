@@ -33,3 +33,15 @@
     }
 }
 
+.menu__cont{
+    @include menu__cont
+}
+
+.menu{
+    @media (min-width: 1000px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

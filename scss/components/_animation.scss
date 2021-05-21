@@ -31,3 +31,23 @@
     }
 }
 
+.menu__cont{
+    position: relative;
+    overflow: hidden;
+    .btn1{
+        
+        animation: menu 400ms 200ms ease-in-out both;
+    }
+    .btn2{
+        
+        animation: menu 400ms 400ms ease-in-out both;
+    }
+    .btn3{
+        
+        animation: menu 400ms 600ms ease-in-out both;
+    }
+    .btn4{
+        
+        animation: menu 400ms 800ms ease-in-out both;
+    }
+}

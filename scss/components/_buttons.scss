@@ -14,3 +14,38 @@
     }
 }
 
+.menu__cont__btn{
+    @include btn--menu;
+}
+
+.btn--4{
+    @media (min-width: 1250px){
+    width: 22%;
+    min-width: 200px;
+    margin-right: 25px;
+    }
+}
+
+.btn--3{
+    @media (min-width: 1250px){
+    width: 30%;
+    min-width: 300px;
+    margin-right: 25px;
+    }
+}
+
+.menu__btn--commander{
+    @include btn--discover;
+    text-decoration: none;
+    color: $colour-text-secondary;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0px 10px 0px 10px;
+    &:hover{
+        .menu__btn--commander--darken{
+            opacity: 1;
+            border-radius: 30px;
+        }
+    }
+}
