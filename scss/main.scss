@@ -1,14 +1,12 @@
 /*# Utils */
     /*# Variables */
 @import "./utils/variables";
-    /*# Fonctions */
-@import "./utils/functions";
+    
     /*# Mixins */
 @import "./utils/mixins";
 @import "./utils/keyframes";
     /*# Placeholders */
-@import "./utils/extensions";
-
+    
 /*# Vendors */
 
 /*# Base */
@@ -30,4 +28,3 @@
 /*# Pages */
 @import "./pages/page-menu";
 
-/*# Themes */
