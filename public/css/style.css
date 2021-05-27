@@ -201,11 +201,13 @@ header h3 {
   align-items: center;
 }
 .cont-fct__btn i {
-  margin-right: 20px;
+  margin-right: 10px;
   width: 25px;
   font-size: 1.2rem;
   color: #6a6a6a;
-  transition: color 1s;
+  transition: color 0s;
+  border: 10px solid transparent;
+  display: inline-block;
 }
 
 .cont-fct__btn--shop {
@@ -221,7 +223,7 @@ header h3 {
   box-shadow: 6px 6px 10px #b6b6b6;
   transition: opacity 250ms ease-in-out;
   cursor: pointer;
-  background: #efe6fa;
+  background: #f6f6f6;
 }
 @media (min-width: 1000px) {
   .cont-fct__btn--shop {
@@ -243,6 +245,7 @@ header h3 {
 }
 .cont-fct__btn--shop:hover {
   opacity: 0.8;
+  
 }
 .cont-fct__btn--shop:hover .cont-fct__btn--darken {
   opacity: 1;
@@ -261,13 +264,15 @@ header h3 {
   align-items: center;
 }
 .cont-fct__btn--shop i {
-  margin-right: 20px;
+  margin-right: 10px;
   width: 25px;
   font-size: 1.2rem;
   color: #6a6a6a;
-  transition: color 1s;
+  border: 10px solid transparent;
+  display: inline-block;
+  transition: color 0s;
 }
-.cont-fct__btn--shop i {
+.cont-fct__btn i:hover,.cont-fct__btn--shop i:hover {
   color: #9356DC;
 }
 
