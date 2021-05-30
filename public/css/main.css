@@ -207,6 +207,10 @@ header h3 {
   transition: color 0s;
 }
 
+.cont-fct__btn:hover i {
+  color: #9356DC;
+}
+
 .cont-fct__btn--shop {
   display: flex;
   align-items: center;
@@ -220,7 +224,7 @@ header h3 {
   box-shadow: 6px 6px 10px #b6b6b6;
   transition: opacity 250ms ease-in-out;
   cursor: pointer;
-  background: #efe6fa;
+  background: #f6f6f6;
 }
 @media (min-width: 1000px) {
   .cont-fct__btn--shop {
@@ -266,7 +270,8 @@ header h3 {
   color: #6a6a6a;
   transition: color 0s;
 }
-.cont-fct__btn--shop i {
+
+.cont-fct__btn--shop:hover i {
   color: #9356DC;
 }
 

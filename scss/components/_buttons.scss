@@ -6,10 +6,18 @@
     @include btn--fct;
 }
 
+.cont-fct__btn:hover{
+     i{color:$colour-primary}
+}
+
 .cont-fct__btn--shop{
     @include btn--fct;
     background: lighten($colour-primary, 34%);
-    & i{
+
+}
+
+.cont-fct__btn--shop:hover{
+     i{
         color: $colour-primary;    
     }
 }
