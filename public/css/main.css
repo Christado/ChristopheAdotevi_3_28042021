@@ -181,7 +181,7 @@ header h3 {
   transition: opacity 250ms;
 }
 .cont-fct__btn:hover {
-  opacity: 0.8;
+  opacity: 8;
 }
 .cont-fct__btn:hover .cont-fct__btn--darken {
   opacity: 1;
@@ -241,7 +241,7 @@ header h3 {
   transition: opacity 250ms;
 }
 .cont-fct__btn--shop:hover {
-  opacity: 0.8;
+  opacity: 8;
 }
 .cont-fct__btn--shop:hover .cont-fct__btn--darken {
   opacity: 1;
