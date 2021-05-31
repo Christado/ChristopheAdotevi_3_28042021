@@ -228,7 +228,7 @@ header h3 {
   box-shadow: 6px 6px 10px #b6b6b6;
   transition: opacity 250ms ease-in-out;
   cursor: pointer;
-  background: #f5f0fc;
+  background: #f6f6f6;
 }
 @media (min-width: 1000px) {
   .cont-fct__btn--shop {
